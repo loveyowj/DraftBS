@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120vh;
+    overflow-x: hidden;
+}
+section .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.register{
+    position: relative;
+    padding: 60px;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(15px);
+    border: 1px solid #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    border-right: 1px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 1);
+}
+.register h2{
+    position: relative;
+    width:100%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #829460;
+    margin-bottom: 10px;
+}
+.register .inputBox{
+    position:relative;
+}
+.register .inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    font-size: 1.25em;
+    color:#AA8B56;
+    border-radius: 5px;
+    background: #fff;
+    border: none;
+    margin-bottom: 30px;
+}
+.register .inputBox ::placeholder{
+    color:#AA8B56;
+}
+.register .inputBox #btn{
+    position: relative;
+    border: none;
+    outline: none;
+    background: #829460;
+    color:#fff;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.register .inputBox #btn:hover{
+    background: transparent;
+    color:#829460;
+}
+.register .group{
+    display: flex;
+    justify-content: space-between ;
+}
+.register .group a{
+    font-size: 1.25em;
+    color:#AA8B56;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.register .group p {
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+}
+.popup{
+    width: 400px;
+    background: #E9DCBE;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    visibility:hidden;
+    transform: 0.4s, top 0.4s;
+    transition: 0.3s; 
+}
+.open-popup{
+    visibility:visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup .h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+    color:#829460;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #AA8B56;
+    color:#fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
